@@ -50,7 +50,7 @@ TallerTP1/
 
 Acción: Completar formulario con "Clase abstracta" y descripción.
 Resultado esperado: Aparece en la lista.
-
+![alt text](caso1.png)
 
 ## Caso 2 – Ver todos
 
