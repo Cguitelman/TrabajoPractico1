@@ -63,8 +63,8 @@ Resultado esperado: JSON con todos los conceptos.
 
 ## Caso 3 – Eliminar un concepto
 
-Acción: DELETE /conceptos/1
-Resultado esperado: Elimina el concepto con id=1.
+Acción: DELETE /conceptos/2
+Resultado esperado: Elimina el concepto con id=2.
 ![Ejemplo baja concepto](./img/caso3.png)
 ![Ejemplo baja concepto](./img/caso3-1.png)
 ![Ejemplo baja concepto](./img/caso3-2.png)
