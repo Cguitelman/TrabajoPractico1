@@ -50,6 +50,10 @@ const server = http.createServer((req, res) => {
     res.writeHead(200);
     res.end(JSON.stringify({ mensaje: "Concepto eliminado" }));
   }
+  else if (req.url === "/" && req.method === "GET") {
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("API del TP1 activa 🚀. Usá /conceptos para interactuar.");
+}
   else {
     res.writeHead(404);
     res.end("Ruta no encontrada");
