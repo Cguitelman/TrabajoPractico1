@@ -34,6 +34,8 @@ TallerTP1/
 ├── backend/
 │ └── server.js
 │
+├── img/
+│
 └── README.md
 
 
@@ -50,33 +52,37 @@ TallerTP1/
 
 Acción: Completar formulario con nombre concepto y descripción.
 Resultado esperado: Aparece en la lista.
-![alt text](caso1.png)
-![alt text](caso1-1.png)
+![Ejemplo alta concepto](./img/caso1.png)
+![Ejemplo alta concepto](./img/caso1-1.png)
 
 ## Caso 2 – Ver todos
 
 Acción: Hacer GET /conceptos en navegador.
 Resultado esperado: JSON con todos los conceptos.
-![alt text](caso2.png)
+![Ejemplo ver conceptos](./img/caso2.png)
 
 ## Caso 3 – Eliminar un concepto
 
 Acción: DELETE /conceptos/1
 Resultado esperado: Elimina el concepto con id=1.
-![alt text](caso3.png)
-![alt text](caso3-1.png)
-![alt text](caso3-2.png)
-![alt text](caso3-3.png)
+![Ejemplo baja concepto](./img/caso3.png)
+![Ejemplo baja concepto](./img/caso3-1.png)
+![Ejemplo baja concepto](./img/caso3-2.png)
+![Ejemplo baja concepto](./img/caso3-3.png)
 
 ## Caso 4 - Eliminar todos los conceptos
 
 Accion: DELETE /conceptos
 Resultado esperado: Elimina todos los conceptos
 
-![alt text](caso4.png)
-![alt text](caso4-1.png)
+![Ejemplo baja conceptos](./img/caso4.png)
+![Ejemplo baja conceptos](./img/caso4-1.png)
 
 ## Conclusiones
 
 Aprendizaje: Pude entender cómo funciona un backend sin librerías externas, manejando rutas manualmente.
-Dificultad: El manejo del CORS y el parsing del body fueron complicados al principio, pero se resolvieron leyendo la documentación y probando casos.
+Dificultad: 
+1. El manejo del CORS y el parsing del body fueron complicados al principio, pero se resolvieron leyendo la documentación y probando casos.
+2. Me pasó varias veces que no podía pushear porque el repo remoto ya tenía un README o porque las ramas (main y dev) no coincidían.
+3. Me costó encontrar cómo probar los DELETE y terminé haciéndolo con fetch desde el navegador.
+4. También me confundí con el mensaje de “Ruta no encontrada” hasta que entendí que era porque estaba entrando a / en lugar de /conceptos.
