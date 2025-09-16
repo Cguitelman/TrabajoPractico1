@@ -48,20 +48,33 @@ TallerTP1/
 
 ## Caso 1 – Agregar concepto
 
-Acción: Completar formulario con "Clase abstracta" y descripción.
+Acción: Completar formulario con nombre concepto y descripción.
 Resultado esperado: Aparece en la lista.
 ![alt text](caso1.png)
+![alt text](caso1-1.png)
 
 ## Caso 2 – Ver todos
 
-Acción: Hacer GET /conceptos en navegador o Postman.
+Acción: Hacer GET /conceptos en navegador.
 Resultado esperado: JSON con todos los conceptos.
-
+![alt text](caso2.png)
 
 ## Caso 3 – Eliminar un concepto
 
 Acción: DELETE /conceptos/1
 Resultado esperado: Elimina el concepto con id=1.
+![alt text](caso3.png)
+![alt text](caso3-1.png)
+![alt text](caso3-2.png)
+![alt text](caso3-3.png)
+
+## Caso 4 - Eliminar todos los conceptos
+
+Accion: DELETE /conceptos
+Resultado esperado: Elimina todos los conceptos
+
+![alt text](caso4.png)
+![alt text](caso4-1.png)
 
 ## Conclusiones
 
