@@ -69,7 +69,10 @@ Resultado esperado: JSON con los datos del concepto 1.
 
 ## Caso 4 – Eliminar un concepto
 
-Acción: DELETE /conceptos/2
+Acción: Ingresar siguiente código en consola de navegador
+fetch("http://localhost:3000/conceptos/2", { method: "DELETE" })
+  .then(r => r.json())
+  .then(console.log);
 Resultado esperado: Elimina el concepto con id=2.
 ![Ejemplo baja concepto](./img/caso3-1.png)
 ![Ejemplo baja concepto](./img/caso3-2.png)
@@ -77,7 +80,10 @@ Resultado esperado: Elimina el concepto con id=2.
 
 ## Caso 5 - Eliminar todos los conceptos
 
-Accion: DELETE /conceptos
+Accion: Ingresar siguiente código en consola de navegador
+fetch("http://localhost:3000/conceptos", { method: "DELETE" })
+  .then(r => r.json())
+  .then(console.log);
 Resultado esperado: Elimina todos los conceptos
 
 ![Ejemplo baja conceptos](./img/caso4.png)
