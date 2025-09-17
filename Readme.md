@@ -36,6 +36,9 @@ TallerTP1/
 │
 ├── img/
 │
+├── node_modules
+│
+│
 └── README.md
 
 
@@ -43,9 +46,7 @@ TallerTP1/
 
 ## Cómo ejecutar
 1. Instalar Node.js.  
-2. Entrar en la carpeta `backend` y correr:
-   ```bash
-   node server.js
+2. Entrar en la carpeta `TP1`, abrir bash y correr npm start
 
 
 ## Caso 1 – Agregar concepto
@@ -57,20 +58,24 @@ Resultado esperado: Aparece en la lista.
 
 ## Caso 2 – Ver todos
 
-Acción: Hacer GET /conceptos en navegador.
+Acción: Añadir /conceptos en navegador luego de http://localhost:3000/.
 Resultado esperado: JSON con todos los conceptos.
 ![Ejemplo ver conceptos](./img/caso2.png)
 
-## Caso 3 – Eliminar un concepto
+## Caso 3 - Ver por ID
+Acción: Añadir /conceptos/1 en navegador luego de http://localhost:3000/.
+Resultado esperado: JSON con los datos del concepto 1.
+![Ejemplo baja concepto](./img/caso3.png)
+
+## Caso 4 – Eliminar un concepto
 
 Acción: DELETE /conceptos/2
 Resultado esperado: Elimina el concepto con id=2.
-![Ejemplo baja concepto](./img/caso3.png)
 ![Ejemplo baja concepto](./img/caso3-1.png)
 ![Ejemplo baja concepto](./img/caso3-2.png)
 ![Ejemplo baja concepto](./img/caso3-3.png)
 
-## Caso 4 - Eliminar todos los conceptos
+## Caso 5 - Eliminar todos los conceptos
 
 Accion: DELETE /conceptos
 Resultado esperado: Elimina todos los conceptos
@@ -86,3 +91,4 @@ Dificultad:
 2. Me pasó varias veces que no podía pushear porque el repo remoto ya tenía un README o porque las ramas (main y dev) no coincidían.
 3. Me costó encontrar cómo probar los DELETE y terminé haciéndolo con fetch desde el navegador.
 4. También me confundí con el mensaje de “Ruta no encontrada” hasta que entendí que era porque estaba entrando a / en lugar de /conceptos.
+5. No entendía qué era y para qué servía npm, usaba node por la mitad.
